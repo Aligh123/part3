@@ -1,0 +1,25 @@
+# node modules
+node_modules/
+
+# logs
+*.log
+
+# dotenv files
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VSCode files
+.vscode/
+
+# backup files
+*.bak
+
+# test coverage
+coverage/
+
+# build files (in case of build setup)
+build/
+dist/
