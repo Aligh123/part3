@@ -22,4 +22,4 @@ coverage/
 
 # build files (in case of build setup)
 build/
-dist/
+

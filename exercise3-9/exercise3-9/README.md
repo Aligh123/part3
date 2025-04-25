@@ -1,17 +1,10 @@
-# Phonebook Backend
+# Phonebook Full Stack App
 
-This is the backend of the Full Stack Phonebook application from the Fullstack Open course.
+This is a full stack phonebook application.
 
-## Online deployment
+✅ Backend deployed to Railway:  
+👉 https://part3-production-d17c.up.railway.app
 
-🔗 [Live backend on Railway](https://part3-production-d17c.up.railway.app/api/persons)
+✅ Frontend is bundled and served from the same backend.
 
-> Note: The backend responds to API routes only. The root `/` route is not configured.
-
-## Run locally
-
-1. Clone this repository
-2. Install dependencies
-
-```bash
-npm install
+To run locally:
