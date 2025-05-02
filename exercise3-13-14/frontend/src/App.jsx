@@ -20,13 +20,23 @@ const App = () => {
 
   const addPerson = (event) => {
     event.preventDefault();
+    if (newName.trim() === "" || newNumber.trim() === "") {
+      alert("Name and Number are required!");
+      return;
+    }
     const newPerson = { name: newName, number: newNumber };
 
-    personService.create(newPerson).then((returnedPerson) => {
-      setPersons(persons.concat(returnedPerson));
-      setNewName("");
-      setNewNumber("");
-    });
+    personService
+      .create(newPerson)
+      .then((returnedPerson) => {
+        setPersons(persons.concat(returnedPerson));
+        setNewName("");
+        setNewNumber("");
+      })
+      .catch((error) => {
+        console.error("Error creating person:", error);
+        alert("Something went wrong. Check console for details.");
+      });
   };
 
   return (
